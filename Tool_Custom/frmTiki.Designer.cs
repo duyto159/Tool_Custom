@@ -30,7 +30,6 @@
         {
             this.btnGet = new System.Windows.Forms.Button();
             this.txtLink = new System.Windows.Forms.TextBox();
-            this.rtbData = new System.Windows.Forms.RichTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -52,22 +51,15 @@
             this.txtLink.Size = new System.Drawing.Size(965, 20);
             this.txtLink.TabIndex = 1;
             // 
-            // rtbData
-            // 
-            this.rtbData.Location = new System.Drawing.Point(12, 123);
-            this.rtbData.Name = "rtbData";
-            this.rtbData.Size = new System.Drawing.Size(539, 300);
-            this.rtbData.TabIndex = 2;
-            this.rtbData.Text = "";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(568, 123);
+            this.dataGridView1.Location = new System.Drawing.Point(33, 123);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(665, 300);
+            this.dataGridView1.Size = new System.Drawing.Size(1200, 300);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
+            this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView1_DataBindingComplete);
             // 
             // frmTiki
             // 
@@ -75,7 +67,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1260, 450);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.rtbData);
             this.Controls.Add(this.txtLink);
             this.Controls.Add(this.btnGet);
             this.Name = "frmTiki";
@@ -91,7 +82,6 @@
 
         private System.Windows.Forms.Button btnGet;
         private System.Windows.Forms.TextBox txtLink;
-        private System.Windows.Forms.RichTextBox rtbData;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
