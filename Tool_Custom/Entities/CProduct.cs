@@ -12,6 +12,7 @@ namespace Tool_Custom.Entities
         private string m_strLink;
         private string m_strImage;
         private double m_dblPrice;
+        private string m_strQty_Sold;
 
         public CProduct()
         {
@@ -23,6 +24,7 @@ namespace Tool_Custom.Entities
             m_strLink = CConst.STR_VALUE_NULL;
             m_strImage = CConst.STR_VALUE_NULL;
             m_dblPrice = CConst.DB_VALUE_NULL;
+            m_strQty_Sold = CConst.STR_VALUE_NULL;
         }
 
 
@@ -30,7 +32,6 @@ namespace Tool_Custom.Entities
         public string Link { get => m_strLink; set => m_strLink = value; }
         public string Image { get => m_strImage; set => m_strImage = value; }
         public double Price { get => m_dblPrice; set => m_dblPrice = value; }
-
-
+        public string Qty_Sold { get => m_strQty_Sold; set => m_strQty_Sold = value; }
     }
 }
