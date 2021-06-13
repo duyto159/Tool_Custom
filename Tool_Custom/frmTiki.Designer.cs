@@ -31,6 +31,7 @@
             this.btnGet = new System.Windows.Forms.Button();
             this.txtLink = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblValue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,11 +62,21 @@
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView1_DataBindingComplete);
             // 
+            // lblValue
+            // 
+            this.lblValue.AutoSize = true;
+            this.lblValue.Location = new System.Drawing.Point(112, 96);
+            this.lblValue.Name = "lblValue";
+            this.lblValue.Size = new System.Drawing.Size(13, 13);
+            this.lblValue.TabIndex = 4;
+            this.lblValue.Text = "0";
+            // 
             // frmTiki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1260, 450);
+            this.Controls.Add(this.lblValue);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtLink);
             this.Controls.Add(this.btnGet);
@@ -83,5 +94,6 @@
         private System.Windows.Forms.Button btnGet;
         private System.Windows.Forms.TextBox txtLink;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblValue;
     }
 }
